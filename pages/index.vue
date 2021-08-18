@@ -73,28 +73,54 @@
           <p class="md:px-10 text-3xl md:text-4xl font-bold font-exo">
             Working to Bring Ideas To Life &#38;
           </p>
-          <p class="md:px-10 -mt-2 text-3xl md:text-4xl  font-bold font-exo">Projects Rolling.</p>
+          <p class="md:px-10 -mt-2 text-3xl md:text-4xl font-bold font-exo">
+            get Projects Rolling.
+          </p>
           <p class="md:px-10 text-lg mt-2 font-regular font-exo">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id asperiores
             exercitationem maxime fuga saepe quibusdam nostrum facere nisi eius possimus,
             quam iusto earum repellat sequi odit eum, deserunt rerum quaerat?
           </p>
           <div class="flex justify-end md:mr-20 mr-6">
-             <button
-            class="rounded font-exo border-4 border-blue-900 px-5 py-3 hover:bg-blue-900 hover:text-white font-body font-bold"
-          >
-            Say Hello!
-          </button>
+            <button
+              class="rounded-full font-exo border-4 border-blue-900 px-5 py-3 hover:bg-blue-900 hover:text-white font-body font-bold"
+            >
+              Hire Me
+            </button>
           </div>
         </div>
         <div></div>
       </div>
       <!-- Recent Works -->
       <div>
-        <p class="text-center font-body py-10 text-4xl font-bold pb-2">Recent Works</p>
+        <p class="text-center font-exo py-10 text-3xl md:text-4xl font-bold pb-2">
+          Recent Works
+        </p>
         <p class="text-gray-900 text-center pt-2 text-lg font-regular mb-6">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus esse.
         </p>
+        <div class="grid md:grid-cols-2 gap-10 mx-10">
+          <div class=" rounded-2xl bg-blue-200 relative hover:opacity-75">
+           <img src="~/assets/wabey.png" class="mx-auto rounded-3xl" alt="Text" />
+            <div
+              class="opacity-0 hover:opacity-100 rounded-3xl bg-blue-900 duration-500 absolute inset-0 z-10 flex justify-center"
+            >
+            <p class="text-xl text-white font-exo mt-10 font-bold">
+              A Start Up Project I am a Part Of and Currently Working On.
+            </p>
+            </div>
+          </div>
+       <div class="bg-black rounded-2xl relative hover:opacity-75">
+           <img src="~/assets/tough.png" class="mx-auto rounded-3xl" alt="Text" />
+            <div
+              class="opacity-0 hover:opacity-100 rounded-xl bg-blue-900 duration-300 absolute inset-0 z-10 flex justify-center"
+            >
+              <p class="text-2xl text-white font-exo mt-10 mx-10 md:mx-32 font-bold">
+              A Start Up Project I am a Part Of and Currently Working On.
+            </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
