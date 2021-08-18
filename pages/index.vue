@@ -4,12 +4,12 @@
     <!-- Landing Intro -->
     <div>
       <div class="flex flex-wrap justify-center">
-        <p class="text-4xl md:text-5xl text-center font-body font-bold">
+        <p class="text-4xl md:text-5xl text-center font-exo font-bold">
           UI/UX Designer and Full-Stack Web Developer
         </p>
       </div>
       <div class="flex flex-wrap justify-center">
-        <p class="text-2xl font-body font-thin">
+        <p class="text-2xl font-exo font-thin text-center">
           UI/UX Designer and Full-Stack Web Developer
         </p>
       </div>
@@ -22,12 +22,14 @@
     <!-- Intro and Services -->
     <div class="bg-blue-900 mt-8">
       <!-- Intro -->
-      <p class="text-center font-body text-white py-10 text-3xl font-bold pb-2">
+      <p class="text-center font-exo text-white py-10 text-3xl font-bold pb-2">
         Hi, I am Bruck. Nice to Meet You!
       </p>
       <div class="flex flex-wrap justify-center">
         <div class="w-1/2">
-          <p class="text-gray-500 text-center pt-6 text-lg leading-loose font-regular">
+          <p
+            class="text-gray-500 text-center pt-2 text-lg leading-loose font-regular mb-6"
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus esse
             quidem sapiente odio, earum optio nobis, natus deleniti atque dolorem debitis
             repellat molestiae laboriosam quo sequi.
@@ -49,7 +51,7 @@
             <img :src="require('../assets/' + service.iconName)" />
           </div>
           <div class="px-6 py-4">
-            <div class="font-body font-bold text-2xl my-6 text-center">
+            <div class="font-exo font-bold text-2xl my-6 text-center">
               {{ service.title }}
             </div>
             <p class="text-gray-700 text-base">
@@ -57,32 +59,45 @@
             </p>
           </div>
           <div class="mb-6">
-            <p class="text-center text-blue-600 my-6 text-xl font-medium font-body">
+            <p class="text-center text-blue-600 my-6 text-xl font-medium font-exo">
               {{ service.subtitle }}
             </p>
             <p class="text-center text-lg mb-6 font-light font-body">
               {{ service.subtitleDescription }}
             </p>
-            <p class="text-center text-blue-600 text-xl mb-6 font-body">
-              {{ service.toolsTitle }}
-            </p>
-            <p
-              v-for="(tool, index) in service.tools"
-              :key="index"
-              class="text-center text-lg mb-1 font-body font-light"
-            >
-              {{ tool }}
-            </p>
           </div>
         </div>
       </div>
-        <!-- Portifolio -->
-       <div class="text-center font-body py-10 text-4xl font-bold pb-2">
-      <p>My Portfolio</p>
-    </div>
+      <div class="grid grid-cols-1 mt-6 md:grid-cols-2">
+        <div class="mx-2">
+          <p class="md:px-10 text-3xl md:text-4xl font-bold font-exo">
+            Working to Bring Ideas To Life &#38;
+          </p>
+          <p class="md:px-10 -mt-2 text-3xl md:text-4xl  font-bold font-exo">Projects Rolling.</p>
+          <p class="md:px-10 text-lg mt-2 font-regular font-exo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id asperiores
+            exercitationem maxime fuga saepe quibusdam nostrum facere nisi eius possimus,
+            quam iusto earum repellat sequi odit eum, deserunt rerum quaerat?
+          </p>
+          <div class="flex justify-end md:mr-20 mr-6">
+             <button
+            class="rounded font-exo border-4 border-blue-900 px-5 py-3 hover:bg-blue-900 hover:text-white font-body font-bold"
+          >
+            Say Hello!
+          </button>
+          </div>
+        </div>
+        <div></div>
+      </div>
+      <!-- Recent Works -->
+      <div>
+        <p class="text-center font-body py-10 text-4xl font-bold pb-2">Recent Works</p>
+        <p class="text-gray-900 text-center pt-2 text-lg font-regular mb-6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus esse.
+        </p>
+      </div>
     </div>
   </div>
-
 </template>
 
 <script>
@@ -152,4 +167,3 @@ export default {
 }
 */
 </style>
-

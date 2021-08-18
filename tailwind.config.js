@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Roboto Condensed','sans','sans-serif']
+        exo: ['Exo','sans','sans-serif']
       },
     },
   },
