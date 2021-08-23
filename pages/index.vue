@@ -83,13 +83,15 @@
           </p>
           <div class="flex justify-end md:mr-20 mr-6">
             <button
-              class="rounded-full font-exo border-4 border-blue-900 px-5 py-3 hover:bg-blue-900 hover:text-white font-body font-bold"
+              class="rounded-full font-exo border-4 mt-4 border-blue-900 px-5 py-3 hover:bg-blue-900 hover:text-white font-body font-bold"
             >
               Hire Me
             </button>
           </div>
         </div>
-        <div></div>
+        <div class="flex justify-center">
+          <img :src="techStack" alt="" />
+        </div>
       </div>
       <!-- Recent Works -->
       <div>
@@ -99,25 +101,43 @@
         <p class="text-gray-900 text-center pt-2 text-lg font-regular mb-6">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus esse.
         </p>
-        <div class="grid md:grid-cols-2 gap-10 mx-10">
-          <div class=" rounded-2xl bg-blue-200 relative hover:opacity-75">
-           <img src="~/assets/wabey.png" class="mx-auto rounded-3xl" alt="Text" />
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mx-10">
+          <div class="rounded-2xl bg-blue-200 relative hover:opacity-75">
+            <img src="~/assets/wabey.png" class="mx-auto rounded-3xl" alt="Text" />
             <div
-              class="opacity-0 hover:opacity-100 rounded-3xl bg-blue-900 duration-500 absolute inset-0 z-10 flex justify-center"
+              class="opacity-0 hover:opacity-100 rounded-3xl bg-blue-200 duration-500 absolute inset-0 z-10 flex justify-center"
             >
-            <p class="text-xl text-white font-exo mt-10 font-bold">
-              A Start Up Project I am a Part Of and Currently Working On.
-            </p>
+              <div class="w-64">
+                <p class="text-xl text-center text-black font-exo mt-10 font-bold">
+                  A Start Up Project I am a Part Of and Currently Working On.
+                </p>
+                <div class="flex justify-center">
+                  <button
+                    class="rounded-full text-black font-exo border-2 mt-4 border-blue-900 px-5 py-3 hover:bg-blue-900 hover:text-white font-body font-bold"
+                  >
+                    Visit Website
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-       <div class="bg-black rounded-2xl relative hover:opacity-75">
-           <img src="~/assets/tough.png" class="mx-auto rounded-3xl" alt="Text" />
+          <div class="bg-black rounded-3xl relative hover:opacity-75">
+            <img src="~/assets/tough.webp" class="mx-auto rounded-3xl" alt="Text" />
             <div
-              class="opacity-0 hover:opacity-100 rounded-xl bg-blue-900 duration-300 absolute inset-0 z-10 flex justify-center"
+              class="opacity-0 hover:opacity-100 rounded-3xl bg-black duration-500 absolute inset-0 z-10 flex justify-center"
             >
-              <p class="text-2xl text-white font-exo mt-10 mx-10 md:mx-32 font-bold">
-              A Start Up Project I am a Part Of and Currently Working On.
-            </p>
+              <div class="w-64">
+                <p class="text-xl text-center text-white font-exo mt-10 font-bold">
+                  A Start Up Project I am a Part Of and Currently Working On.
+                </p>
+                <div class="flex justify-center">
+                 <button
+                    class="rounded-full text-white font-exo border-4 mt-4 border-orange-800 px-5 py-3 hover:bg-orange-800 hover:text-white font-body font-bold"
+                  >
+                    Visit Website
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -128,10 +148,14 @@
 
 <script>
 import bruck from "@/assets/bruck.svg";
+import techStack from "@/assets/techStack.svg";
+
 export default {
+  name: 'HomePage',
   data() {
     return {
       bruck,
+      techStack,
       services: [
         {
           iconName: "web-design.svg",
