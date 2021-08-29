@@ -4,12 +4,12 @@
     <!-- Landing Intro -->
     <div>
       <div class="flex flex-wrap justify-center">
-        <p class="text-4xl md:text-5xl text-center font-exo font-bold">
+        <p class="text-2xl px-10 md:pl-0 md:text-5xl text-center font-exo font-bold">
           UI/UX Designer and Full-Stack Web Developer
         </p>
       </div>
       <div class="flex flex-wrap justify-center">
-        <p class="text-2xl font-exo font-thin text-center">
+        <p class="text-xl md:text-2xl px-10 md:pl-0 font-exo font-thin text-center">
           UI/UX Designer and Full-Stack Web Developer
         </p>
       </div>
@@ -89,7 +89,7 @@
             </button>
           </div>
         </div>
-        <div class="flex justify-center">
+        <div class="mt-10 sm:mt-0 flex justify-center">
           <img :src="techStack" alt="" />
         </div>
       </div>
@@ -105,17 +105,18 @@
           <div class="rounded-2xl bg-blue-200 relative hover:opacity-75">
             <img src="~/assets/wabey.png" class="mx-auto rounded-3xl" alt="Text" />
             <div
-              class="opacity-0 hover:opacity-100 rounded-3xl bg-blue-200 duration-500 absolute inset-0 z-10 flex justify-center"
+              class="opacity-0 hover:opacity-100 rounded-3xl bg-blue-900 duration-500 absolute inset-0 z-10 flex justify-center"
             >
               <div class="w-64">
-                <p class="text-xl text-center text-black font-exo mt-10 font-bold">
+                <p class="text-xl text-center text-white font-exo mt-10 font-bold">
                   A Start Up Project I am a Part Of and Currently Working On.
                 </p>
                 <div class="flex justify-center">
                   <button
-                    class="rounded-full text-black font-exo border-2 mt-4 border-blue-900 px-5 py-3 hover:bg-blue-900 hover:text-white font-body font-bold"
+                    class="flex justify-center rounded-full text-white font-exo border-2 mt-4 border-white px-5 py-3 hover:bg-blue-600 hover:border-blue-600 hover:text-white font-body font-bold"
                   >
                     Visit Website
+                    <img class="ml-2 mt-1" :src="next" alt="" />
                   </button>
                 </div>
               </div>
@@ -124,17 +125,18 @@
           <div class="bg-black rounded-3xl relative hover:opacity-75">
             <img src="~/assets/tough.webp" class="mx-auto rounded-3xl" alt="Text" />
             <div
-              class="opacity-0 hover:opacity-100 rounded-3xl bg-black duration-500 absolute inset-0 z-10 flex justify-center"
+              class="opacity-0 hover:opacity-100 rounded-3xl bg-blue-900 duration-500 absolute inset-0 z-10 flex justify-center"
             >
               <div class="w-64">
                 <p class="text-xl text-center text-white font-exo mt-10 font-bold">
                   A Start Up Project I am a Part Of and Currently Working On.
                 </p>
                 <div class="flex justify-center">
-                 <button
-                    class="rounded-full text-white font-exo border-4 mt-4 border-orange-800 px-5 py-3 hover:bg-orange-800 hover:text-white font-body font-bold"
+                  <button
+                    class="flex justify-center rounded-full text-white font-exo border-2 mt-4 border-white px-5 py-3 hover:bg-blue-600 hover:border-blue-600 hover:text-white font-body font-bold"
                   >
                     Visit Website
+                    <img class="ml-2 mt-1" :src="next" alt="" />
                   </button>
                 </div>
               </div>
@@ -149,13 +151,15 @@
 <script>
 import bruck from "@/assets/bruck.svg";
 import techStack from "@/assets/techStack.svg";
+import next from "@/assets/next.svg";
 
 export default {
-  name: 'HomePage',
+  name: "HomePage",
   data() {
     return {
       bruck,
       techStack,
+      next,
       services: [
         {
           iconName: "web-design.svg",
